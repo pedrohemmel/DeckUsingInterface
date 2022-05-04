@@ -6,6 +6,7 @@ namespace DuckUsingInterface
     class Program
     {
 
+        //Função estatica a parte que copia a List<T> após o indice especificado
         public static List<T> CopiaApos<T>(List<T> lista, int indexCorte)
         {
 
@@ -22,6 +23,8 @@ namespace DuckUsingInterface
         }
         static void Main(string[] args)
         {
+
+            //Instanciando todas classes ja com suas interfaces
             MallardDuck patoHenrique = new MallardDuck("Pato Henrique");
             AnimatedDuck patoRobert = new AnimatedDuck("Pato Robert");
             RubberDuck patoWellinston = new RubberDuck("Pato Wllinston");
@@ -42,6 +45,8 @@ namespace DuckUsingInterface
 
             Console.WriteLine("\n"); 
             Console.WriteLine("\n");
+
+            //Codigo a parte que nos permite inserir varios itens na List<T> e após isso copiar todos itens apos o indice definido
 
             List<int> listaFeita = new List<int>();
             listaFeita.Add(10);
